@@ -1,0 +1,95 @@
+<div>
+    <h4>DenunciaDeleteViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DescricaoOcorrido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescricaoOcorrido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataOcorrido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataOcorrido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HorarioOcorrido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HorarioOcorrido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LocalOcorrido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LocalOcorrido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoOcorrencia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoOcorrencia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CaracteristicasSuspeito)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CaracteristicasSuspeito)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ip)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ip)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Navegador)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Navegador)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Latitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Latitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Longitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Longitude)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
